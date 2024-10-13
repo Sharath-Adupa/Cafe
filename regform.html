@@ -23,8 +23,19 @@
 		<label for="business-account"><input id="business-account" type="radio" name="account-type"/> Business</label>
 	</fieldset>
 	<fieldset>
-		<label>Upload a profile picture <input type="file" /></label>
-		<label>Input your age (years): <input type="number" /></label>
+		<label for="profile-picture">Upload a profile picture <input id="profile-picture" type="file" /></label>
+		<label for="age">Input your age (years): <input id="age" type="number" /></label>
+		<label for="referrer">
+			How did you hear about us?
+			<select id="referrer">
+				<option>(select one)</option>
+				<option>Instagram reels</option>
+				<option>TV commercials</option>
+				<option>Billboards</option>
+				<option>Influencers</option>
+			</select>
+		</label>
+		<label for="bio">Provide a bio:<textarea rows="3" cols="30" placeholder="I'd love to date my girl at the coffee shop on the beach on a rainy day..." id="bio"></textarea></label>
 	</fieldset>
 	<label for="terms-and-conditions"><input required type="checkbox" id="terms-and-conditions"/>I accept the <a href="https://www.blisscafe.org/news/terms-of-service">terms and conditions</label>
 	<input type="submit" value="Submit"/>
